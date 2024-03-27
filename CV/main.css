@@ -1,0 +1,30 @@
+/* En css nos vamos a manejar con clases. Las clases las identificamos con un "."*/
+
+.encabezado {
+    background-color: rgb(49, 58, 73);
+    color: rgb(255, 255, 255);
+}
+
+.alinear{
+    display: flex;
+    gap: 20px;
+}
+
+
+.foto{
+    width: 200px;
+}
+
+/*peso de la letra*/
+.titulo-exp{
+    font-weight: bold;
+
+}
+
+.caja-izquierda{
+    width: 30%;
+}
+
+.caja-derecha{
+    width: 60%;
+}
