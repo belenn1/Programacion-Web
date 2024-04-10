@@ -1,0 +1,6 @@
+1 La propiedad que permite que el CSS cambie su comportamiento es el display:flex
+2 La propiedad del CSS que permite definir el espacio entre los elementos hijos dentro de un contenedor es el "flex"
+3 La diferencia es que align-items solo se puede utilizar con flex direction ,y el justify-content solo se usa con el flex
+4 La propiedad que utiliza el CSS para definir las columnas y las filas es el grid-template-columns y grid-template-rows
+5 La principal diferencia entre el flex y grid es que el grid se puede hacer mas de una fila y en el flex no se pueden realizar mas de una columna y fila
+6 Los elementos hijos se alinean con un class 
