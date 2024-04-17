@@ -1,12 +1,13 @@
 .tamaño {
-    width: 80%;
+    width: 48%;
     aspect-ratio: 1/2;
     object-fit: cover;
 }
 
 .alineamiento{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: auto;
     gap: 20px;
 }
 
@@ -15,6 +16,29 @@
 }
 
 .alineamiento_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: darkslategrey;
+}
+
+.colorLetra{
+    color: rgb(255, 255, 255);
+}
+
+.colorCaja{
+    margin-top: 10px;
+    background-color: black;
+    border-radius: 50px;
+}
+
+.alineamientoCaja{
     display: flex;
     flex-direction: column;
     align-items: center;
