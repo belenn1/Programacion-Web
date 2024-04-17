@@ -2,3 +2,16 @@
     display: flex;
     justify-content:end ;
 }
+
+.caja{
+    background-color: rgb(99, 81, 23);
+}
+
+.alineamiento{
+    display: grid ;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+  
+
+}
+
