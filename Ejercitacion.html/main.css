@@ -1,17 +1,68 @@
-.flex{
-    display: flex;
-    justify-content:end ;
+.flex {
+  display: flex;
+  justify-content: end;
 }
 
-.caja{
-    background-color: rgb(99, 81, 23);
+.alineamiento {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
 }
 
-.alineamiento{
-    display: grid ;
-    grid-template-columns: repeat(3,100px);
-    grid-template-rows: repeat(3,100px);
-  
-
+.alineamientoCaja {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-auto-rows: auto;
+  gap: 15px;
+  text-align: center;
+}
+
+.foto {
+  width: 100%;
+  aspect-ratio: 1 / 2;
+  object-fit: contain;
+}
+
+.colorfondo-eevee {
+  background-color: rgb(97, 74, 41);
+}
+
+.colorfondo-jigglypuff {
+  background-color: rgb(226, 148, 187);
+}
+
+.colorfondo-charmander {
+  background-color: rgb(216, 111, 50);
+}
+
+.Bordeevee {
+  margin-top: 20%;
+  background-color: rgb(97, 74, 41);
+  border-radius: 50px;
+  margin-bottom: 100%;
+}
+
+.Bordejj {
+  margin-top: 20%;
+  background-color: rgb(226, 148, 187);
+  border-radius: 50px;
+  margin-bottom: 100%;
+}
+
+.Bordecharmander {
+  margin-top: 20%;
+  background-color: rgb(216, 111, 50);
+  border-radius: 50px;
+  margin-bottom: 100%;
+}
+.alineamiento_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
