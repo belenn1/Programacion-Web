@@ -1,0 +1,10 @@
+.colorfondo {
+  background-color: rgb(108, 110, 148);
+  border-radius: 90px;
+}
+
+.alineamiento_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
