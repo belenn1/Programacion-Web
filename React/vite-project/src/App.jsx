@@ -1,10 +1,9 @@
-import { Prueba } from "../../components/Prueba";
+import { CharacterList } from "./components/rickymorty/ejerciciofetch";
 
 function App() {
   return (
     <>
-      hola
-      <Prueba nombre={"Belen"} Apellido={"Chijo"} />
+      <CharacterList />
     </>
   );
 }
