@@ -14,19 +14,30 @@ const App = () => {
         <About />
         <section id="projects">
           <h2>Proyectos</h2>
-          <Project
-            title="Proyecto 1"
-            description="Descripción del proyecto 1."
-            link="http://127.0.0.1:5500/Ejercitacion.html/Pokemons.html"
-          />
-          <Project
-            title="Proyecto 2"
-            description="Descripción del proyecto 2."
-            link="https://enlace-al-proyecto2.com"
-          />
+          <div className="proyecto">
+            <Project
+              title="Pokemones"
+              description="Son tres tarjertas de pokemons donde vemos la imagen y el tipo de pokemon que es, el 
+              trabajo se puede ver en el link de abajo"
+              link="http://127.0.0.1:5500/Ejercitacion.html/Pokemons.html"
+            />
+
+            <Project
+              title="Peliculas"
+              description="Es una cartelera donde pones tus tres peliculas favoritas, el trabajo se puede ver en el link de abajo"
+              link="http://127.0.0.1:5500/pelicula/index.html"
+            />
+            <Project
+              title="Venta de productos"
+              description="Colocamos a la venta tres productos cualquiera, lo podes ver con el link de abajo"
+              link="http://127.0.0.1:5500/EjercicioRepaso/ejercicio2/iindeexx.html"
+            />
+          </div>
+
           <Contact
-            email="beelenC@gmail.com"
+            title="Email: beelenC@gmail.com"
             description="descripcion de la ayuda que necesitas :)"
+            link=""
           />
         </section>
       </main>

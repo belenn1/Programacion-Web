@@ -1,21 +1,25 @@
 .aliniamiento_header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .aliniamiento {
-    display: grid;
-    grid-template-columns: repeat(3, 250px);
-    grid-template-rows: repeat(3, 350px);
-    gap: 20px;
-    text-align: center;
-  }
-  
-  .aliniamiento_foto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: rgb(0, 0, 0);
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aliniamiento {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: repeat(3, 350px);
+  gap: 20px;
+  text-align: center;
+}
+
+.aliniamiento_foto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(0, 0, 0);
+}
+
+.foto {
+  width: 100%;
+  object-fit: cover;
+}
