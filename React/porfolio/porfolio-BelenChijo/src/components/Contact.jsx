@@ -1,14 +1,13 @@
 import React from "react";
 
-const Project = ({ title, description, link }) => {
+const Contacto = ({ title, description, link }) => {
   return (
     <>
       <div>
-        <h2 id="contact">Contact</h2>
+        <h2 id="Contacto">Contacto</h2>
         <p>{description}</p>
-        <a href={link}>Ver Contacto</a>
       </div>
     </>
   );
 };
-export default Project;
+export default Contacto;

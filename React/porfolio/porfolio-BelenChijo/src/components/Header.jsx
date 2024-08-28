@@ -7,7 +7,8 @@ const Header = () => {
       <nav>
         <a href="#about">Sobre mí</a>
         <a href="#projects">Proyectos</a>
-        <a href="#Contact">Contacto</a>
+        <a href="#Contacto">Contacto</a>
+        <a href="#Habilidades">Habilidades</a>
       </nav>
     </header>
   );

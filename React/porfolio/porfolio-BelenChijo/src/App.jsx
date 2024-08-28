@@ -4,7 +4,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Project from "./components/Project";
-import Contact from "./components/Contact";
+import Contacto from "./components/Contact";
+import Habilidades from "./components/Habilidades";
 
 const App = () => {
   return (
@@ -12,33 +13,31 @@ const App = () => {
       <Header />
       <main>
         <About />
+
         <section id="projects">
-          <h2>Proyectos</h2>
+          <h2>Mis Proyectos</h2>
           <div className="proyecto">
             <Project
               title="Pokemones"
-              description="Son tres tarjertas de pokemons donde vemos la imagen y el tipo de pokemon que es, el 
-              trabajo se puede ver en el link de abajo"
+              description="Son tres tarjertas de pokemons donde vemos la imagen e info del pokemon que es, se puede ver en el link de abajo."
               link="http://127.0.0.1:5500/Ejercitacion.html/Pokemons.html"
+              linkFoto={"/E.png"}
             />
 
             <Project
               title="Peliculas"
-              description="Es una cartelera donde pones tus tres peliculas favoritas, el trabajo se puede ver en el link de abajo"
+              description="Es una cartelera que muestra tus tres peliculas favoritas que se van a poder ver en los cines, el trabajo se puede ver en el link de abajo."
               link="http://127.0.0.1:5500/pelicula/index.html"
             />
             <Project
               title="Venta de productos"
-              description="Colocamos a la venta tres productos cualquiera, lo podes ver con el link de abajo"
-              link="http://127.0.0.1:5500/EjercicioRepaso/ejercicio2/iindeexx.html"
+              description="Es como una tienda virtual donde colocamos a la venta tres productos cualquiera, lo podes ver con el link de abajo."
+              link="http://127.0.0.1:5500/EjercicioRepaso/ejercicio2/iindeexx.html "
             />
           </div>
+          <Habilidades description="Gracias a algunos trabajos pude desarrollar habilidades para usar HTML, CSS y JavaScript, Tambien Software de Bases de Datos como el MySQL" />
 
-          <Contact
-            title="Email: beelenC@gmail.com"
-            description="descripcion de la ayuda que necesitas :)"
-            link=""
-          />
+          <Contacto description="Email: belennnc25026@gmail.com" />
         </section>
       </main>
 
