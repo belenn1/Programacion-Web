@@ -1,37 +1,49 @@
 import { useEffect, useState } from "react";
-import supabase from "./assets/lib/helper/supabaseClient";
+import { supabase } from "./assets/lib/helper/supabaseClient";
 
 export default function App() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    const getSession = async () => {
-      const { data, error } = await supabase.auth.getSession();
-      if (error) {
-        console.log(error);
-      } else {
-        setUser(data?.session?.user);
+    const session = supabase.auth.getSession();
+    setUser(session?.user);
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((event, session) => {
+      switch (event) {
+        case "SIGNED_IN":
+          setUser(session?.user);
+          break;
+        case "SIGNED_OUT":
+          setUser(null);
+          break;
+        default:
       }
+    });
+    return () => {
+      subscription.unsubscribe();
     };
-    getSession();
   }, []);
 
-  const handClick = async () => {
-    const { data, error } = supabase.auth.signInWithOAuth({
+  const login = async () => {
+    await supabase.auth.signInWithOAuth({
       provider: "github",
     });
-    if (error) {
-      console.log(error);
-    } else {
-      console.log(data);
-    }
   };
+  const logout = async () => {
+    await supabase.auth.signOut();
+  };
+
   return (
-    <>
-      <header>
-        este es el header
-        <button onClick={handClick}>Conectar con Github</button>
-      </header>
-    </>
+    <div>
+      {user ? (
+        <div>
+          <h1>Authenticated</h1>
+          <button onClick={logout}>Logout</button>
+        </div>
+      ) : (
+        <button onClick={login}>Login with Github</button>
+      )}
+    </div>
   );
 }
